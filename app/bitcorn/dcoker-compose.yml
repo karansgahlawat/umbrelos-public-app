@@ -1,0 +1,26 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    image: getumbrel/umbrel-app-proxy:latest
+    restart: always
+    environment:
+      APP_HOST: app
+      APP_PORT: 3000
+    networks:
+      - default
+    depends_on:
+      - app
+
+  app:
+    image: karansgahlawat/bitcorn-payments:0.0.1
+    restart: always
+    stop_grace_period: 1m
+    environment:
+      PORT: 3000
+    networks:
+      - default
+
+networks:
+  default:
+    external: false
