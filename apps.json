@@ -1,0 +1,6 @@
+{
+  "name": "BitCorn Dev Store",
+  "apps": [
+    "apps/bitcorn"
+  ]
+}
