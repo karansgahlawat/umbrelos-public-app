@@ -1,1 +1,14 @@
-
+id: "bitcorn-payments"
+name: "BitCorn Payments (MVP)"
+version: "0.0.1"
+tagline: "A simple Bitcoin payment system for farmers"
+description: "Minimal Lightning Network & BTC payments app for grain transactions."
+developer: "BitCorn Tech Inc."
+website: "https://bitcorn.biz"
+repo: "https://github.com/karansgahlawat/umbrelos-bitcorn"
+support: "https://bitcorn.biz/support"
+port: 3000
+path: ""
+categories:
+  - finance
+dependencies: []
